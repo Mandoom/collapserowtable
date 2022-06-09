@@ -1,243 +1,40 @@
 <!DOCTYPE html>
-            <html>
-               <head>
-                  <meta charset="utf-8">
-                  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-                  <title></title>
-                  <meta name="description" content="">
-                  <meta name="viewport" content="width=device-width, initial-scale=1">
-                  <link rel="stylesheet" href="">
-                  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
 
-               </head>
-               <body>
-                  <!--[if lt IE 7]>
-                  <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-                  <![endif]-->
-                
-                  <!-- MAIN CONTENT -->
-                <div class="main-content ms-2">
-                 <div class="container p-3">
-                  <Header title="Background Search" pretitle="Due Diligence" />
-                  <div class="row">
-        
-                    <div class="col-md-5">
-                     <div class="header-footer">
-                       <form class="mb-2" autocomplete="off" on:submit|preventDefault={search}>
-                 <div class="container p-0">
-  
-                <div class="row gy-3 gx-3 form-fields">
-                  <div class="col-md-6">
-                    <div class="input-group form-floating">
-                      <input value="" type="text" name="firstName" class="form-control form-control-lg " placeholder="First Name" />
-                      <label for="firstName" style="z-index:5;" class="form-label">First Name</label>
-                      
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="input-group form-floating">
-                      <input value="" type="text" name="lastName" class="form-control form-control-lg " placeholder="Last Name" />
-                      <label for="lastName" style="z-index:5;" class="form-label">Last Name</label>
-                      
-                    </div>
-                  </div>
-  
+<div class="container mt-3">
+  <h3>Toast Example</h3>
+  <p>In this example, we use a button to show the toast message.</p>
 
+  <button type="button" class="btn btn-primary" id="toastbtn">Show Toast</button>
   
-                  <div class="col-md-6">
-                    <div class="input-group form-floating">
-                      <input type="date" name="dob" class="form-control form-control-lg "  />
-                      <label for="dob" style="z-index:5;" class="form-label">D.O.B</label>
-                      
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="input-group form-floating">
-                      <input value="" type="text" name="ssn" class="form-control form-control-lg " placeholder="Social Security Number" />
-                      <label for="ssn" style="z-index:5;" class="form-label">SSN or FEIN</label>
-                      
-                    </div>
-                  </div>
-  
-                  <div class="col-md-6">
-                    <div class="input-group form-floating">
-                      <input value="" type="text" name="address" class="form-control form-control-lg"  placeholder="Address"/>
-                      <label for="address" style="z-index:5;" class="form-label">Address</label>
-                      
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="input-group  form-floating ">
-                      <input value="" type="text" name="city" class="form-control form-control-lg " placeholder="City" />
-                      <label for="city" style="z-index:5;" class="form-label">City</label>
-                      
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="input-group form-floating ">
-                      <select name="state" class="form-select form-select-lg mb-3">
-                        <option selected hidden>Select state</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                      </select>
-                      <label for="state" style="z-index:5;" class="form-label">State</label>
-                      
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="input-group form-floating ">
-                      <input value="" type="text" name="zip" class="form-control form-control-lg " placeholder="Zip Code" />
-                      <label for="zip" style="z-index:5;" class="form-label">Zip Code</label>
-                      
-                    </div>
-                  </div>
-  
-                </div>
-                <div class="row">
-                  <div class="col-md-6">
-                    <button type="submit" class="w-100 btn btn-primary btn-lg">Verify</button>
-                  </div>
-                  <div class="col-md-6">
-                    <button id="resetbtn" type="reset" class="w-25  btn btn-outline-secondary">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-clockwise" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2v1z" />
-                        <path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466z" />
-                      </svg>
-                  </div>
-                </div>
-  
-                
-  
-  
-  
-              </div>
-  
-            </form>
-        </div>
-  
-        <!-- / .col-md-5 -->
-        </div>
-        <div class="col-md-7">
-  
-           <!-- CARDS -->
-  
-          <!-- search results -->
-          <div class="card w-100 ms-0">
-            <div class="card-header">
-              <!-- Title -->
-              <h4 class="card-header-title">Search Results</h4>
-  
-              <!-- Button -->
-              <!-- <a href="#!" class="btn btn-sm btn-white">Export</a> -->
-            </div>
-            <!--
-            <div class="table-responsive mb-0">
-              <SvelteTable classNameThead="text-muted" classNameTable="table table-sm card-table table-nowrap table-striped" {columns} {rows} />
-            </div>
-            -->
-
-            <div class="container">
-                     <div class="col-md-12">
-                        <div class="panel panel-default">
-                           <div class="panel-heading">
-                              Employee
-                           </div>
-                           <div class="panel-body">
-                              <table class="table table-condensed table-striped">
-                                 <thead>
-                                    <tr>
-                                       
-                                       <th>Name / SSN</th>
-                                       <th>D.O.B / Age</th>
-                                       <th>Adress</th>
-                                       <th>Reported</th>
-                                     
-                                    </tr>
-                                 </thead>
-                                 <tbody>
-                                    <tr data-bs-toggle="collapse" data-bs-target="#demo1" class="accordion-toggle">
-                                        <td>Carlos</td>
-                                        <td>Mathias</td>
-                                        <td>Leme</td>
-                                        <td>SP</td>
-                                     
-                                    </tr>
-                                    <tr>
-                                       <td colspan="12" class="hiddenRow">
-                                          <div class="accordian-body collapse" id="demo1">
-                                          
-                                            <div class="container">
-                                                <div class="row">
-                                                    <table class="table table-condensed">
-                                                        <thead>
-                                                           <tr>
-                                                              
-                                                              <th>Known Adresses</th>
-                                                              <th>Source</th>
-                                                              <th>Last Confirmed</th>
-                                                              
-                                                            
-                                                           </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                           <tr class="known-adresses-row">
-                                                               <td class="adress d-flex flex-column">
-                                                                   <p class="address-line al1"></p>
-                                                                   <p class="address-line al2"></p>
-                                                                   <p class="address-line al3"></p>
-
-                                                               </td>
-                                                               <td class="source">
-                                                                   Lorem ipsum dolor sit amet consectetur aneas egit 
-                                                                </td>
-                                                               <td class="last-confirmed">dd/mm/yyyy</td>
-                                                               
-                                                           </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                                <div class="row results-download-bar">
-
-                                                </div>
-
-                                            </div>
-                                          </div>
-                                       </td>
-                                    </tr>
-                                   
-                                    </tr>
-                                 </tbody>
-                              </table>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-            
-            
-           
-          </div>
-  
-  
-  
-          
-        </div>
-      </div>
-  
-  
-  
-  
-  
-  
-    <!-- / . container -->
+  <div class="toast">
+    <div class="toast-header">
+      <strong class="me-auto">Toast Header</strong>
+      <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
     </div>
-  
-  
-  <!-- / .main-content -->
-                </div>
+    <div class="toast-body">
+      <p>Some text inside the toast body</p>
+    </div>
+  </div>
+</div>
 
-                  <script src="" async defer></script>
-                  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-                  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-               </body>
-            </html>
+<script>
+document.getElementById("toastbtn").onclick = function() {
+  var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+  var toastList = toastElList.map(function(toastEl) {
+    return new bootstrap.Toast(toastEl)
+  })
+  toastList.forEach(toast => toast.show()) 
+}
+</script>
+
+</body>
+</html>
